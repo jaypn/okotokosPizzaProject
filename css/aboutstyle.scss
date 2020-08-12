@@ -70,15 +70,29 @@
   
 }
 
-#footer {
+#footer1 {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+#main {
+  background-color: whitesmoke;
+  justify-items: center;
+  align-items: center;
+  min-height: 80vh;
+}
+#footer {
+  justify-items: center;
   min-height: 10vh;
   background-color: cornsilk;
-  width: 100%;
-}
+  display: grid;
+}  
 
 
 
