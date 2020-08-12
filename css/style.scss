@@ -1,0 +1,127 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    font-family: Arial, Helvetica , sans-serif;
+    
+}
+
+#header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 4fr 2fr;
+  min-height: 50px;
+
+  #logo {
+    img {
+      width: 100%;
+    }
+
+  }
+
+  #nav {
+    #checkbox {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      opacity: 0;
+      z-index: 5;
+      
+      
+    }
+    #checkbox:checked ~ #menu {
+      top: 0px;
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    #container {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      z-index: 4;
+      position: relative;
+      .hamburger-line {
+        width: 20px;
+        height: 4px;
+        background-color: gray;
+      }
+    }
+    #menu {
+      position: absolute;
+      width: 100%;
+      background-color: burlywood;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      top: -15vh;
+      opacity: 0;
+      left: 0px;
+      min-height: 15vh;
+       a {
+         text-decoration: none;
+       }
+    }
+  
+
+  }
+  
+}
+
+
+#footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-height: 10vh;
+  background-color: cornsilk;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
