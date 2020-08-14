@@ -134,3 +134,47 @@
   color: white;
 }
 
+
+
+#maincareer {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  column-gap: 5vw;
+  row-gap: 5vw;
+  min-height: 80vh;
+  background-color: whitesmoke;
+}
+.career-image {
+  width: 90%;
+  
+}
+.career1 p {
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+#maincareer h1 {
+  display: inline-block;
+  border-bottom: 2px solid blueviolet;
+  font-size: 18px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+
+.career1 a {
+  color: blue;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+.career1 {
+  display: grid;
+  row-gap: 5vw;
+}
