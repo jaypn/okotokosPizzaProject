@@ -4,6 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+#headertab, #headerdesk {
+  display: none;
+}
 
 #header {
   display: grid;
@@ -81,12 +84,7 @@
   }
 }
 
-#main {
-  background-color: whitesmoke;
-  justify-items: center;
-  align-items: center;
-  min-height: 80vh;
-}
+
 #footer {
   justify-items: center;
   min-height: 10vh;
@@ -142,14 +140,14 @@
 
 
 
-#mainabout {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5vh;
+.mainabout {
+  background-color: whitesmoke;
+  min-width: 80vh;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  column-gap: 5vw;
-  row-gap: 5vw;
+  width: 90%;
+  padding: 20px;
   
 }
 
@@ -158,7 +156,7 @@
 
 .about-image {
   width: 90%;
-  height: 20vh;
+  
   
 }
 .about-content {
@@ -176,17 +174,33 @@
   text-align: center;
 }
 
-.card-container h2 {
-  display: inline-block;
-  border-bottom: 3px solid burlywood;
-  font-size: 18px;
-  padding-bottom: 10px;
-  margin-top: 10px;
 
-  
-
-}
 p {
   font-size: 14px;
   color: gray;
+}
+.about1 h1 {
+  display: inline-block;
+  border-bottom: 2px solid blueviolet;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width:600px) {
+  .about1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+  }
+  .mainabout {
+    display: block;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 20px;
+
+
+  }
 }

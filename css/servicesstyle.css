@@ -4,6 +4,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#headertab, #headerdesk {
+  display: none;
+}
+
 #header {
   display: -ms-grid;
   display: grid;
@@ -180,5 +184,41 @@
 .service p {
   color: burlywood;
   font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .service1 {
+    background-color: whitesmoke;
+    min-height: 80vh;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+  }
+  .mainservices {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1000) {
+  .service1 {
+    background-color: whitesmoke;
+    min-height: 80vh;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+  }
+  .mainservices {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 20px;
+  }
 }
 /*# sourceMappingURL=servicesstyle.css.map */

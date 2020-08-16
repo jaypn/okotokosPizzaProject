@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+#headertab, #headerdesk {
+  display: none;
+}
+
 #header {
   display: -ms-grid;
   display: grid;
@@ -21,7 +25,7 @@
 }
 
 #header #logo img {
-  width: 100%;
+  width: 80%;
 }
 
 #header #nav #checkbox {
@@ -167,6 +171,7 @@
   -webkit-column-gap: 5vw;
           column-gap: 5vw;
   row-gap: 10px;
+  margin-left: 5%;
 }
 
 .home1 a {
@@ -197,5 +202,84 @@ iframe {
 .home1 {
   display: -ms-grid;
   display: grid;
+}
+
+@media screen and (min-width: 600px) {
+  #header, #headerdesk {
+    display: none;
+  }
+  #number {
+    display: none;
+  }
+  #headertab {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    min-height: 50px;
+  }
+  #headertab #logo img {
+    width: 80%;
+  }
+  #headertab #navtab #checkbox {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+  }
+  #headertab #navtab #checkbox:checked ~ #menutab {
+    top: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #headertab #navtab #container {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    position: relative;
+  }
+  #headertab #navtab #container .hamburger-line {
+    width: 20px;
+    height: 4px;
+    background-color: gray;
+  }
+  #headertab #navtab #menutab {
+    position: absolute;
+    width: 100%;
+    background-color: burlywood;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: -15vh;
+    opacity: 0;
+    left: 0px;
+    min-height: 15vh;
+  }
+  #headertab #navtab #menutab a {
+    text-decoration: none;
+  }
+  #mainhome {
+    display: block;
+    margin-left: 5%;
+  }
+  #video {
+    min-height: 30vh;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#headertab, #headerdesk {
+  display: none;
+}
+
 #header {
   display: -ms-grid;
   display: grid;
@@ -182,5 +186,11 @@
   display: -ms-grid;
   display: grid;
   row-gap: 5vw;
+}
+
+@media screen and (min-width: 600px) {
+  #maincareer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=careerstyle.css.map */

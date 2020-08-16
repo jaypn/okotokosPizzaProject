@@ -4,6 +4,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#headertab, #headerdesk {
+  display: none;
+}
+
 #header {
   display: -ms-grid;
   display: grid;
@@ -207,5 +211,93 @@
 .grid-container p {
   color: burlywood;
   font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    background-color: whitesmoke;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  #number {
+    display: none;
+  }
+  .menu1 {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: -ms-grid;
+    display: grid;
+  }
+  .mainmenu {
+    display: block;
+  }
+  #header, #headerdesk {
+    display: none;
+  }
+  #headertab {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    min-height: 50px;
+  }
+  #headertab #logo img {
+    width: 80%;
+  }
+  #headertab #navtab #checkbox {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+  }
+  #headertab #navtab #checkbox:checked ~ #menutab {
+    top: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #headertab #navtab #container {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    position: relative;
+  }
+  #headertab #navtab #container .hamburger-line {
+    width: 20px;
+    height: 4px;
+    background-color: gray;
+  }
+  #headertab #navtab #menutab {
+    position: absolute;
+    width: 100%;
+    background-color: burlywood;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: -15vh;
+    opacity: 0;
+    left: 0px;
+    min-height: 15vh;
+  }
+  #headertab #navtab #menutab a {
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=menustyle.css.map */

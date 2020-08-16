@@ -4,6 +4,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#headertab, #headerdesk {
+  display: none;
+}
+
 #header {
   display: -ms-grid;
   display: grid;
@@ -126,6 +130,11 @@
   margin-bottom: 5px;
   text-align: center;
   text-decoration: none;
+}
+
+.location1 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #footer {

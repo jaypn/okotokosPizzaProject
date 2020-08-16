@@ -4,6 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+#headertab, #headerdesk {
+  display: none;
+}
 
 #header {
   display: grid;
@@ -203,5 +206,95 @@
   }
 
 
+  @media screen and (min-width:600px){
+    .grid-container {
+      background-color: whitesmoke;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      }
+      #number {
+        display: none;
+      }
+      
+    
+    .menu1 {
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      
+      display: grid;
 
+    }
+    .mainmenu {
+      display: block;
+    }
 
+    #header, #headerdesk {
+      display: none;
+  
+    }
+  
+  #headertab {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    min-height: 50px;
+    
+  
+    #logo {
+      img {
+        width: 80%;
+      }
+  
+    }
+  
+    #navtab {
+      #checkbox {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        opacity: 0;
+        z-index: 5;
+        
+        
+      }
+      #checkbox:checked ~ #menutab {
+        top: 0px;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      #container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        z-index: 4;
+        position: relative;
+        .hamburger-line {
+          width: 20px;
+          height: 4px;
+          background-color: gray;
+        }
+      }
+      #menutab {
+        position: absolute;
+        width: 100%;
+        background-color: burlywood;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        top: -15vh;
+        opacity: 0;
+        left: 0px;
+        min-height: 15vh;
+         a {
+           text-decoration: none;
+         }
+      }
+    
+  
+    }
+  }  
+  }

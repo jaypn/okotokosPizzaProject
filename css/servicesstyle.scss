@@ -4,6 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+#headertab, #headerdesk {
+  display: none;
+}
 
 #header {
   display: grid;
@@ -182,3 +185,50 @@
   font-size: 14px;
 }
 
+
+
+ 
+
+
+@media screen and (min-width:600px){
+  .service1 {
+    background-color: whitesmoke;
+    min-height: 80vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 20px;
+    
+  }
+  .mainservices {
+    
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  
+  
+  
+
+  
+  
+
+}
+@media screen and (min-width: 1000) {
+  .service1 {
+    background-color: whitesmoke;
+    min-height: 80vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 20px;
+    
+  }
+  .mainservices {
+    
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  
+}
