@@ -79,19 +79,22 @@
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   
+  
   a {
     text-decoration: none;
   }
 }
 
-
 #footer {
   justify-items: center;
   min-height: 10vh;
+  align-items: center;
   background-color: cornsilk;
-  display: grid;
-  text-align: center;
-}  
+}
+
+
+
+ 
 
 
 
@@ -142,10 +145,12 @@
 
 .mainabout {
   background-color: whitesmoke;
-  min-width: 80vh;
+  min-height: 80vh;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  display: block;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      
+    
   width: 90%;
   padding: 20px;
   
@@ -172,6 +177,7 @@
 }
 .card-container {
   text-align: center;
+  
 }
 
 
@@ -185,6 +191,14 @@ p {
   padding-bottom: 10px;
   text-align: center;
 }
+.about1 {
+
+      
+  display: block;
+  
+
+}
+
 
 
 
@@ -195,6 +209,14 @@ p {
     grid-template-rows: repeat(2,1fr);
     
   }
+  #header, #headerdesk {
+    display: none;
+    
+    }
+    #number {
+      display: none;
+    }
+   
   .mainabout {
     display: block;
     align-items: center;
@@ -203,4 +225,167 @@ p {
 
 
   }
+
+  #headertab {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    min-height: 50px;
+    
+  
+    #logo {
+      img {
+        width: 80%;
+      }
+  
+    }
+  
+    #navtab {
+      #checkbox {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        opacity: 0;
+        z-index: 5;
+        
+        
+      }
+      #checkbox:checked ~ #menutab {
+        top: 0px;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      #container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        z-index: 4;
+        position: relative;
+        .hamburger-line {
+          width: 20px;
+          height: 4px;
+          background-color: gray;
+        }
+      }
+      #menutab {
+        position: absolute;
+        width: 100%;
+        background-color: burlywood;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        top: -15vh;
+        opacity: 0;
+        left: 0px;
+        min-height: 15vh;
+         a {
+           text-decoration: none;
+         }
+      }
+    
+  
+    }
+  }
 }
+
+
+@media screen and (min-width:100px) {
+  #header, #headertab {
+    display: none;
+    
+    }
+    #number {
+      display: none;
+    }
+    #headerdesk {
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      min-height: 10vh;
+      margin-left: 50px;
+      
+      
+    
+    
+      align-items: center;
+    }
+    .btn {
+      position: relative;
+      border: 2px solid blueviolet;
+      padding: 14px,16px;
+      margin-left: 60px;
+      color: black;
+      overflow: hidden;
+      transition: 1s all ease;
+    }
+    .btn::before {
+      background: blueviolet;
+      content: "";
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+      transition: 0.6s ease;
+
+
+    }
+
+    .btn1::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn1:hover::before {
+      width: 100%;
+      
+      
+    } 
+    .btn2::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn2:hover::before {
+      width: 100%;
+      
+      
+    }
+    .btn3::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn3:hover::before {
+      width: 100%;
+      
+      
+    } 
+    .btn4::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn4:hover::before {
+      width: 100%;
+      
+      
+    }
+    .btn5::before {
+      width: 0%;
+      height: 100%;
+    }  
+    .btn5:hover::before {
+      width: 100%;
+      
+      
+    } 
+    #logo {
+      width: 100%;
+    } 
+    
+    
+
+
+}
+

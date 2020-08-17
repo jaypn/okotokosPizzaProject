@@ -314,3 +314,147 @@ iframe {
 
 
 }
+
+@media screen and (min-width:1000px) {
+  #header, #headertab {
+    display: none;
+    
+    }
+    #mainhome {
+      display: none;
+    }
+    #number {
+      display: none;
+    }
+
+    #headerdesk {
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      min-height: 10vh;
+      margin-left: 50px;
+      
+      
+    
+    
+      align-items: center;
+    }
+    .btn {
+      position: relative;
+      border: 2px solid blueviolet;
+      padding: 14px,16px;
+      margin-left: 60px;
+      color: black;
+      overflow: hidden;
+      transition: 1s all ease;
+    }
+    .btn::before {
+      background: blueviolet;
+      content: "";
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+      transition: 0.6s ease;
+
+
+    }
+
+    .btn1::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn1:hover::before {
+      width: 100%;
+      
+      
+    } 
+    .btn2::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn2:hover::before {
+      width: 100%;
+      
+      
+    }
+    .btn3::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn3:hover::before {
+      width: 100%;
+      
+      
+    } 
+    .btn4::before {
+      width: 0%;
+      height: 100%;
+    } 
+    .btn4:hover::before {
+      width: 100%;
+      
+      
+    }
+    .btn5::before {
+      width: 0%;
+      height: 100%;
+    }  
+    .btn5:hover::before {
+      width: 100%;
+      
+      
+    }  
+
+
+
+    #logo {
+      width: 100%;
+    }
+    
+
+    #mainhomedesk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+      column-gap: 5vw;
+      row-gap: 5vw;
+      min-height: 80vh;
+      margin: 1%;
+      background-color: whitesmoke;
+      
+      
+    }
+    .imagehome {
+      width: 100%;
+    }
+
+    #video {
+      min-height: 50vh;
+      margin-top: 40px;
+    }
+    .slide {
+      animation-duration: 9s;
+      animation-name: slide;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      position: absolute;
+      color: yellow;
+      
+  }
+  
+  @keyframes slide {
+      from {
+          margin-left: 100%;
+          width: 300%;
+      }
+      to {
+          margin-left: 0%;
+          width: 100%;
+      }
+  }
+
+
+}
+
