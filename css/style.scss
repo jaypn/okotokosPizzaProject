@@ -7,7 +7,7 @@
     }
     
 }
-#headertab, #headerdesk {
+#headertab, #headerdesk, #mainhomedesk {
   display: none;
 }
 
@@ -229,7 +229,7 @@ iframe {
 
 @media screen and (min-width:600px) {
 
-  #header, #headerdesk {
+  #header, #headerdesk, #mainhomedesk {
     display: none;
 
   }
