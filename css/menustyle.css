@@ -234,7 +234,7 @@
   .mainmenu {
     display: block;
   }
-  #header, #headerdesk {
+  #header, #headerdesk, #mainhomedesk {
     display: none;
   }
   #headertab {

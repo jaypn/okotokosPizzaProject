@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-#headertab, #headerdesk {
+#headertab, #headerdesk, #mainhomedesk {
   display: none;
 }
 
@@ -187,6 +187,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home1 p {
@@ -205,7 +207,7 @@ iframe {
 }
 
 @media screen and (min-width: 600px) {
-  #header, #headerdesk {
+  #header, #headerdesk, #mainhomedesk {
     display: none;
   }
   #number {
